@@ -1,0 +1,3 @@
+#!/bin/bash
+sudo gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv $*
+sudo gpg --export --armor $* | sudo apt-key add -
